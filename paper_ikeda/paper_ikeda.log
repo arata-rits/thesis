@@ -1,0 +1,82 @@
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  8 JAN 2024 14:24
+entering extended mode
+ restricted \write18 enabled.
+ Source specials enabled.
+ %&-line parsing enabled.
+**paper_ikeda.tex
+(./paper_ikeda.tex
+pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
+L3 programming layer <2023-02-22>
+(c:/texlive/2023/texmf-dist/tex/platex/base/jreport.cls
+Document Class: jreport 2020/09/30 v1.8f Standard pLaTeX class
+\c@@paper=\count184
+(c:/texlive/2023/texmf-dist/tex/platex/base/jsize12.clo
+File: jsize12.clo 2020/09/30 v1.8f Standard pLaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 704.
+\toclineskip=\dimen156
+\@lnumwidth=\dimen157
+\bibindent=\dimen158
+\heisei=\count194
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 107.
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+)
+
+! LaTeX Error: File `./tex_files/hangcaption.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.5 \usepackage
+               {./tex_files/fancyheadings}^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 751 strings out of 476693
+ 10540 string characters out of 5808556
+ 1842203 words of memory out of 5000000
+ 21273 multiletter control sequences out of 15000+600000
+ 516456 words of font info for 50 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 55i,0n,62p,224b,36s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.

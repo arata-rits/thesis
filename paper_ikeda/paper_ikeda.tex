@@ -1,0 +1,182 @@
+\documentclass[12pt,eclepsfｘ,a4j,twoside,openright]{jreport}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{./tex_files/hangcaption}
+%\usepackage{amssymb}
+\usepackage{./tex_files/fancyheadings}
+\usepackage{pifont}
+\usepackage{url}
+%\usepackage{amsmath}
+\usepackage{./tex_files/cite}
+\renewcommand\citeleft{}
+\renewcommand\citeright{}
+\renewcommand\citeform[1]{[#1]}
+\usepackage{./tex_files/here}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage{listings, jlisting}
+\lstset{
+	language={Python},
+	basicstyle={\small},
+	identifierstyle={\small},
+	commentstyle={\small\ttfamily},
+	keywordstyle={\small\bfseries},
+	ndkeywordstyle={\small},
+	stringstyle={\small\ttfamily},
+	frame={tb},
+	breaklines=true,
+	columns=[1]{fullflexible},
+	numbers=left,
+	xrightmargin=0zw,
+	xleftmargin=0zw,
+	numberstyle={\scriptsize},
+	stepnumber=1,
+	numbersep=1zw,
+	morecomment=[l]{//}
+}
+
+\begin{document}
+\clearpage
+\thispagestyle{empty}
+\vspace*{20pt}
+%\newpage
+\thispagestyle{empty}
+
+%/**********************************************************************/
+%		表紙
+%/**********************************************************************/
+
+\thispagestyle{empty}
+\vspace*{5mm}
+\begin{center}
+{\LARGE 卒業論文 \\}	%卒業論文，修士論文，博士論文のいずれか
+\vspace{15mm}
+\baselineskip=13mm
+{\Huge{LED照明を用いたデジタルサイネージに対する新しい情報付加手法の提案}}	%論文のタイトル，改行したい場合は\\で区切る
+\vspace{7mm}
+
+{\Large
+\[ \mbox{Proposal of a new information addiction method}\choose
+\mbox{for digital signage using LED lighting}\]}		%英語のタイトルをつけるとかっこいい
+
+\vspace{45mm}
+%{\LARGE 2006年\\}
+{\Huge{池田 新}\\}		%あなたの名前
+
+
+
+\vspace{10mm}
+{\LARGE 立命館大学理工学部\\電子情報工学科\\		%所属です，学部と研究科は所属が違うので注意
+}
+\vspace{10mm}
+{\LARGE 2023年12月\\}		%日付です
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+　
+　
+\newpage
+%/**********************************************************************/
+%		概要
+%/**********************************************************************/
+\addcontentsline{toc}{chapter}{内容梗概}		%A4で1ページから2ページで良いです．
+
+\pagenumbering{roman}
+%\baselineskip=32pt
+\begin{abstract}
+\thispagestyle{plain}
+
+\end{abstract}
+
+
+%========================================
+%========================================
+%　　　　論文本体
+%========================================
+%========================================
+%\setcounter{tocdepth}{3}
+\pagestyle{fancy}
+\setcounter{page}{3}
+%\pagenumbering{roman}
+\tableofcontents
+%\clearpage
+\listoffigures
+%\clearpage
+\listoftables
+\clearpage
+
+\lhead{第 \thechapter 章} \rhead{}		%ここから各章毎のファイルを作成して論文とします．
+\input{chptr1}
+\input{chptr2}
+\input{chptr3}
+\input{chptr4}
+\input{chptr5}
+\input{chptr6}
+\input{chptr7}
+
+
+%------------------------------------------------------------------
+% 参考文献
+%------------------------------------------------------------------
+
+\addcontentsline{toc}{chapter}{参考文献}%参考文献は大変重要です，bibtexというものを使用すると使い回しができて便利です．
+\bibliographystyle{./tex_files/ieice_e}
+\bibliography{./tex_files/e_fmcam_ref}		%これがbibtexファイルです．参考文献のリストです．
+
+%------------------------------------------------------------------
+%付録
+%------------------------------------------------------------------
+
+\appendix
+\lhead{付録} \rhead{}
+\input{huroku}
+\newpage
+
+%------------------------------------------------------------------
+\chapter*{謝辞}							%謝辞は必ず書きます．好きにかけるのでどんどん書きましょう．
+\lhead{謝辞} \rhead{}
+\addcontentsline{toc}{chapter}{謝辞}
+%-----------------------------------------------------------------
+\vspace{15mm}
+\begin{flushright}
+2023年3月　立命　太郎
+\end{flushright}
+%------------------------------------------------------------------
+%------------------------------------------------------------------
+\chapter*{研究業績リスト}	
+\addcontentsline{toc}{chapter}{発表論文リスト}
+\lhead{発表論文リスト} \rhead{}
+%------------------------------------------------------------------
+%皆さんの研究業績をここにどんどん書いてきましょう！筆頭でも共著でも良いです．少しでも良いので書くとかっこいいです．修士の場合は論文と国際学会は欲しいですね．
+
+\small
+\noindent
+{\bf 【国内研究会等発表】}		%ここに展示会参加等を書きましょう
+\begin{itemize}
+	\item
+	\underline{立命太郎}, 逢坂京太郎, 安藤義男，竹　信孝, 熊木武志, "2nmプロセスルールのSoCの製造技術可能性, "
+	ET\&IoT West 2021, Jul., 2021.
+\end{itemize}
+{\bf 【国外研究会等発表】}
+\begin{itemize}
+	\item
+	\underline{Taro Ritsumei} and Takeshi Kumaki, "Possibility of 2nm process rule SoC manufacturing technology,"
+	International Computers and communications (ICC), 2021.
+
+\end{itemize}
+{\bf 【その他研究活動】}		%ここに展示会参加等を書きましょう
+\begin{itemize}
+	\item 
+	ET\&IoT West 2021, Jul., 2021.
+	\item 
+	ET\&IoT 2021, Nov., 2021.
+
+\end{itemize}
+{\bf 【受賞】}		%ここに展示会参加等を書きましょう
+\begin{itemize}
+	\item
+	\underline{Yuta Moritake}, Yutaro Shimomura, Ryuya Kirihara, Yuki Hirota, Xiangbo Kong and Takeshi Kumaki, "Development of invisible information lighting display "Stego-panel IV","
+	IEEE Grobal Conference on Consumer Electronics (GCCE), Excellent Demo! award, Gold prize, Oct., 2021.
+\end{itemize}
+\clearpage
+
+\end{document}
